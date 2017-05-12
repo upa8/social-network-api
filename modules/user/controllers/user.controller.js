@@ -7,7 +7,7 @@ class UserController{
     }
     //TODO: Refactor this method asap
     getUser(req, res, next){
-        res.send('User data is rendered');
+        res.send('FollowFollowee data is rendered');
     }
 
     addUser(req, res, next){
@@ -24,17 +24,17 @@ class UserController{
                 // TODO: enhance the error
                 res.send('Email already present');
             }else{
-                res.send('User is added');
+                res.send('FollowFollowee is added');
             }
         });
     }
 
     updateUser(req, res, next){
-        res.send('User is updated');
+        res.send('FollowFollowee is updated');
     }
 
     deleteUser(req, res, next){
-        res.send('User is deleted');
+        res.send('FollowFollowee is deleted');
     }
 }
 var userController = new UserController();

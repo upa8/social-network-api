@@ -13,7 +13,7 @@ Give any user in the world the following superpowers:
  You need to make sure that this is a working API so that you can demo it to us.  Use any programming language & any database you are comfortable with.
 
  APIs you need to create:
-    1. Create User API. ( Store name and email )
+    1. Create FollowFollowee API. ( Store name and email )
     2. Post update API. ( status is text only )
     3. Follow people API.  ( Where you are able to follow other users )
     4. Get followers post. ( Timeline )- 10 post
@@ -32,7 +32,7 @@ Give any user in the world the following superpowers:
 *) Write npm scripts
 *) Add schema validation
 *) Create basic simple api - done
-*) Create User model - done
+*) Create FollowFollowee model - done
 *) Create routes for user api, create basic mvc for user api - done
 *) Separate out tasks in index.js
 *) Write test cases for API's one by one
@@ -41,4 +41,8 @@ Give any user in the world the following superpowers:
 *) Use proper response codes
 *) Can use populate
 *) Indexing of schema
+*) Scenario where use deletes himself
+*) Scenario where user updates a post
+*) Scenario where user deletes a post
+
 

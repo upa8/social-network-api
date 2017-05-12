@@ -5,7 +5,8 @@ var mongoosePaginate = require('mongoose-paginate');
 const User = new mongoose.Schema({
     email: { type: String, unique: true },
     name: String,
-    following: [{following : String}],// store email address
+    following: [],// store email address
+    followers: [],
     lastStatusUpdate: {type: Date},
     status: [{
         status: String,
@@ -14,7 +15,7 @@ const User = new mongoose.Schema({
 }, { timestamps: true });
 
 // TODO: add this if require
-// User.plugin(mongoosePaginate);
+// FollowFollowee.plugin(mongoosePaginate);
 
 const user = mongoose.model('user', User);
 

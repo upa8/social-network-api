@@ -7,7 +7,7 @@ class StatusController{
     }
     //TODO: Refactor this method asap
     getStatus(req, res, next){
-        res.send('Status is sent')
+        res.send('FollowFollowee is sent')
     }
 
     addStatus(req, res, next){
@@ -29,7 +29,7 @@ class StatusController{
             if(err){
                 res.send('Error in adding status');
             }else{
-                res.send('Status updated');
+                res.send('FollowFollowee updated');
             }
         });
 
@@ -41,11 +41,11 @@ class StatusController{
     }
 
     updateStatus(req, res, next){
-        res.send('Status is updated');
+        res.send('FollowFollowee is updated');
     }
 
     deleteStatus(req, res, next){
-        res.send('Status is deleted');
+        res.send('FollowFollowee is deleted');
     }
 }
 var statusController = new StatusController();

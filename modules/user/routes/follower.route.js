@@ -1,41 +1,32 @@
-var userController = require('../controllers/user.controller.js');
-class UserRoute{
+var followerController = require('../controllers/follower.controller');
+
+class StatusRoute{
     constructor(app){
         this.app = app;
         this.initRoutes();
     }
     initRoutes(){
 
-        this.app.get('/api/user',
+        // list of people which user is following to
+        this.app.get('/api/follower',
             function (req,res, next) {
-                userController.getUser(req,res,next);
+                followerController.getFollowers(req,res,next);
             }
         );
 
-        this.app.post('/api/user',
+        /*// list of people who follow a user
+        this.app.get('/api/followee',
             function (req,res, next) {
-                userController.addUser(req,res,next);
+                followerController.getStatus(req,res,next);
+            }
+        );*/
+
+        this.app.post('/api/follower',
+            function (req,res, next) {
+                followerController.follow(req,res,next);
             }
         );
-
-        this.app.put('/api/user',
-            function (req,res, next) {
-                userController.updateUser(req,res,next);
-            }
-        );
-
-        // soft delete
-        this.app.delete('/api/user',
-            function (req,res, next) {
-                userController.deleteUser(req,res,next);
-            }
-        );
-
-        // TODO: Remove this after basic setup testing
-        this.app.get('/testingServer', function (req, res, next) {
-            res.send('Server is running');
-        });
     }
 }
 
-module.exports = UserRoute;
+module.exports = StatusRoute;
