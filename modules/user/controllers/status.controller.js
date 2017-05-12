@@ -25,7 +25,7 @@ class StatusController{
                 data: new Date()
             }],
             $position : 0
-        }} }, function (err,result) {
+        }}, lastStatusUpdate : new Date()} , function (err,result) {
             if(err){
                 res.send('Error in adding status');
             }else{

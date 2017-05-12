@@ -5,7 +5,8 @@ var mongoosePaginate = require('mongoose-paginate');
 const User = new mongoose.Schema({
     email: { type: String, unique: true },
     name: String,
-    followers: [{follower : String}],
+    following: [{following : String}],// store email address
+    lastStatusUpdate: {type: Date},
     status: [{
         status: String,
         date: { type: Date, default: Date.now }
@@ -18,3 +19,9 @@ const User = new mongoose.Schema({
 const user = mongoose.model('user', User);
 
 module.exports = user;
+
+// inhancements
+// maintain a recent 10 posts
+// store last status adding activity
+
+// we can write a batch script which will add post in all his followers recent feed
