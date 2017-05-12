@@ -40,3 +40,5 @@ Give any user in the world the following superpowers:
 *) Improve test cases
 *) Use proper response codes
 *) Can use populate
+*) Indexing of schema
+

@@ -5,9 +5,9 @@ var mongoosePaginate = require('mongoose-paginate');
 const User = new mongoose.Schema({
     email: { type: String, unique: true },
     name: String,
-    followers: [{follower : string}],
+    followers: [{follower : String}],
     status: [{
-        status: string,
+        status: String,
         date: { type: Date, default: Date.now }
     }]
 }, { timestamps: true });
