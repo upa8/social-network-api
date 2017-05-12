@@ -7,23 +7,13 @@ var nodeCache = {};
 class FeedController{
     constructor(){
         this.name = 'feedController';
+
     }
 
     getFollowersPosts(req, res, next){
         // psedo algorithm
         // get list of all the followers,
         // persist it in memory
-
-        this.getUserFollowers().then(this.getFeeds)
-            .then(this.findFollowersPost)
-            .then(this.selectRequirePosts)
-            .then(this.sendRequirePosts)
-            .then(function (result) {
-                console.log('Results');
-                res.send('Final results');
-            }).catch(function (err) {
-            console.log('error');
-        })
 
         // get first 1000 posts from feeds table,
         // check if those 1000 posts contains posts from the given follower list
@@ -35,11 +25,22 @@ class FeedController{
         // repeat this procedure
 
         // get followers of the user
+
+        this.getUserFollowers().then(this.getFeeds)
+            .then(this.findFollowersPost)
+            .then(this.selectRequirePosts)
+            .then(this.sendRequirePosts)
+            .then(function (result) {
+                console.log('Results');
+                res.send('Final results');
+            }).catch(function (err) {
+            console.log('error');
+        });
     }
 
     getUserFollowers(){
         return new Promise(function (resolve, reject) {
-            console.log('Promise resolved')
+
             resolve('Got follower list');
         });
     }
