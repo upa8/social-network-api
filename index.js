@@ -3,7 +3,7 @@ const app = express();
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const cors = require('cors');
-const config = require('./config/config.prod');
+const config = require('./config/config.dev.js');
 const db = mongoose.connect(config.mongoUrl);
 
 //TODO: Move this to separate file

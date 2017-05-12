@@ -16,7 +16,7 @@ Give any user in the world the following superpowers:
     1. Create User API. ( Store name and email )
     2. Post update API. ( status is text only )
     3. Follow people API.  ( Where you are able to follow other users )
-    4. Get followers post. ( Timeline )
+    4. Get followers post. ( Timeline )- 10 post
     5. You need to create username and password based authentication.  ( optional )
 
 
@@ -34,3 +34,9 @@ Give any user in the world the following superpowers:
 *) Create basic simple api - done
 *) Create User model - done
 *) Create routes for user api, create basic mvc for user api - done
+*) Separate out tasks in index.js
+*) Write test cases for API's one by one
+*) We can use express router insted of app.get
+*) Improve test cases
+*) Use proper response codes
+*) Can use populate

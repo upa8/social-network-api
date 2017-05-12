@@ -21,12 +21,12 @@ class UserController{
             // error can occur if url is not unique
             // return error if there is an error in post method
             if (err){
-                throw err;
+                // TODO: enhance the error
+                res.send('Email already present');
+            }else{
+                res.send('User is added');
             }
-            console.log('User is saved');
         });
-
-        res.send('User is added');
     }
 
     updateUser(req, res, next){
