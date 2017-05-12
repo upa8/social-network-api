@@ -1,6 +1,6 @@
 var followerController = require('../controllers/follower.controller');
 
-class StatusRoute{
+class FollowerRoute{
     constructor(app){
         this.app = app;
         this.initRoutes();
@@ -29,4 +29,4 @@ class StatusRoute{
     }
 }
 
-module.exports = StatusRoute;
+module.exports = FollowerRoute;

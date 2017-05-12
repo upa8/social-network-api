@@ -7,6 +7,6 @@ const FollowFollowee = new mongoose.Schema({
     following: String
 }, { timestamps: true });
 
-const status = mongoose.model('follow-followee', FollowFollowee);
-module.exports = status;
+const followFollowee = mongoose.model('follow-followee', FollowFollowee);
+module.exports = followFollowee;
 
