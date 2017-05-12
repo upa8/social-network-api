@@ -10,7 +10,7 @@ const Feed = new mongoose.Schema({
 }, { timestamps: true });
 
 // TODO: add this if require
-// FollowFollowee.plugin(mongoosePaginate);
+// Feed.plugin(mongoosePaginate);
 
 const feed = mongoose.model('feed', Feed);
 
