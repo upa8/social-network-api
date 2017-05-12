@@ -18,3 +18,19 @@ Give any user in the world the following superpowers:
     3. Follow people API.  ( Where you are able to follow other users )
     4. Get followers post. ( Timeline )
     5. You need to create username and password based authentication.  ( optional )
+
+
+# Things that are in loop
+*) Add liniting using eslint
+*) Implement redis if require (ask first)
+*) Change the design as per requirement
+*) Complete the TODO
+*) Refactore the code
+*) Add validation to api
+*) Add token system, csrf ( ask first )
+*) Separate out dev modules and prod modules
+*) Write npm scripts
+*) Add schema validation
+*) Create basic simple api - done
+*) Create User model - done
+*) Create routes for user api, create basic mvc for user api - done

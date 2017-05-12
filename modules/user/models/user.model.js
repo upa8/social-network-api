@@ -6,7 +6,8 @@ const User = new mongoose.Schema({
     name: String,
 }, { timestamps: true });
 
-User.plugin(mongoosePaginate);
+// TODO: add this if require
+// User.plugin(mongoosePaginate);
 
 const user = mongoose.model('user', User);
 
